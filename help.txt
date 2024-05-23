@@ -1,0 +1,38 @@
+game mafia
+
+1- user:
+    - minimum user 10
+    - maximum user 32 
+
+2- role:
+    - all number of role 32
+    - user selection base on number of users
+
+3- game:
+    - time
+    - vote 
+    - remove
+
+======================================
+
+* page user: => index.html, index.js
+    - enter player name => form, input -> qs, event.submit, e.target.value, clear old value
+    - show list of player => ul ol -> qs, create li, append li
+        + edit player name => btn -> qs, append to each li, event.click, edit li textContent
+        + delete player => btn -> qs, append to each li, event.click, remove li textContent
+    - if players are lower than 10 user, can't start game => alert -> if-else
+    - if we have 32 player, user can't access to add new player => alert -> if-else
+        => btn next -> qs, event.click
+
+* page role: => role.html, role.js
+    - show all roles
+    - user can select role
+    - number of user !== number of role selection => can't start game
+
+* page game: => game.html, game.js
+    - timer => 60S
+    - can set vote for each user => 0
+    - remove user
+
+======================================
+
